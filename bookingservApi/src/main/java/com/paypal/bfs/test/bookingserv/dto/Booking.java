@@ -4,7 +4,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import java.util.Date;
-import javax.validation.constraints.NotNull;
+import javax.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -18,11 +18,11 @@ public class Booking {
   private Integer id;
 
   @JsonProperty("first_name")
-  @NotNull
+  @NotEmpty
   private String firstName;
 
   @JsonProperty("last_name")
-  @NotNull
+  @NotEmpty
   private String lastName;
 
   @JsonProperty("date_of_birth")
