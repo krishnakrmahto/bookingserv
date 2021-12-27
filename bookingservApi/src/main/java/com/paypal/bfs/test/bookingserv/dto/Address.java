@@ -1,10 +1,15 @@
 package com.paypal.bfs.test.bookingserv.dto;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonInclude.Include;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import javax.validation.constraints.NotEmpty;
+import lombok.Builder;
 import lombok.Data;
 
+@JsonInclude(Include.NON_NULL)
 @Data
+@Builder
 public class Address {
 
   @NotEmpty
