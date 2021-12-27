@@ -36,7 +36,7 @@
       "format" : "date-time",
       "customDateTimePattern" : "yyyy-MM-dd HH:mm:ss"
     },
-    "totalprice": {
+    "total_price": {
       "description": "Total price",
       "type" : "number"
     },
