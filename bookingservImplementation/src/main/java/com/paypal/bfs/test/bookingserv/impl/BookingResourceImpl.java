@@ -1,7 +1,7 @@
 package com.paypal.bfs.test.bookingserv.impl;
 
 import com.paypal.bfs.test.bookingserv.api.BookingResource;
-import com.paypal.bfs.test.bookingserv.api.model.Booking;
+import com.paypal.bfs.test.bookingserv.dto.Booking;
 import com.paypal.bfs.test.bookingserv.service.BookingService;
 import java.util.List;
 import lombok.AllArgsConstructor;

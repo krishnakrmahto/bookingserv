@@ -1,6 +1,6 @@
 package com.paypal.bfs.test.bookingserv.api;
 
-import com.paypal.bfs.test.bookingserv.api.model.Booking;
+import com.paypal.bfs.test.bookingserv.dto.Booking;
 import java.util.List;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
