@@ -8,6 +8,7 @@ public class BookingTransformer {
   public static BookingEntity toBookingEntity(Booking booking) {
 
     return BookingEntity.builder()
+        .id(booking.getId())
         .firstName(booking.getFirstName())
         .lastName(booking.getLastName())
         .dateOfBirth(booking.getDateOfBirth())
@@ -23,6 +24,11 @@ public class BookingTransformer {
 
     return Booking.builder()
         .id(booking.getId())
+        .firstName(booking.getFirstName())
+        .lastName(booking.getLastName())
+        .address(booking.getAddress())
+        .checkinDatetime(booking.getCheckinDatetime())
+        .checkoutDatetime(booking.getCheckoutDatetime())
         .build();
   }
 

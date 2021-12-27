@@ -10,7 +10,6 @@ import java.util.Objects;
 import javax.persistence.Column;
 import javax.persistence.Convert;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -33,7 +32,6 @@ import org.hibernate.annotations.TypeDef;
 public class BookingEntity {
 
   @Id
-  @GeneratedValue
   private Integer id;
 
   private String firstName;
