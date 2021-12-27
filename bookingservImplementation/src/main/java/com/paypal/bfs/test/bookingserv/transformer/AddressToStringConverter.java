@@ -6,13 +6,11 @@ import com.paypal.bfs.test.bookingserv.dto.Address;
 import java.io.IOException;
 import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;
-import lombok.AllArgsConstructor;
 
 @Converter
-@AllArgsConstructor
 public class AddressToStringConverter implements AttributeConverter<Address, String> {
 
-  private final ObjectMapper objectMapper;
+  private final ObjectMapper objectMapper = new ObjectMapper();
 
   @Override
   public String convertToDatabaseColumn(Address address) {
