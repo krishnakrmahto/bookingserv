@@ -9,6 +9,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @AllArgsConstructor
@@ -16,6 +17,7 @@ public class BookingServiceImpl implements BookingService {
 
   private final BookingRepository repository;
 
+  @Transactional
   @Override
   public Booking create(Booking booking) {
 
